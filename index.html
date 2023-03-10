@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPRO Audifonos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="imagen-header">
+                <!-- Vamos a usar la otra manera de las imagenes para mejor carga de la pagina. -->
+                <picture>
+                    <source sizes="1920w" srcset="/img/header.avif 1920w" type="image/avif">
+                    <source sizes="1920w" srcset="/img/header.webp 1920w" type="image/avif">
+                    <source sizes="1920w" srcset="/img/header.jpeg 1920w" type="image/avif">
+                    <!-- Se recomienda usar el width y el heigth a pesar de que despues lo cambiemos con css -->
+                    <img loading="lazy" decoding="async" src="img/header.png" lazyalt="imagen" width="1000" height="600">
+                </picture>
+            </div>
+            <div class="texto-header">
+                <p class="tagline-producto">Sonido Profesional</p>
+                <h1 class="nombre-producto degradado-verde">TechPRO</h1>                
+                <p class="descripcion-producto">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit vel laboriosam 
+                    quibusdam quae! Fuga minus at ducimus laudantium, aspernatur quos voluptate 
+                    nostrum sint rem autem corrupti sapiente magni quam iste.
+                </p>
+                <p class="precio-producto">Desde <span>$299</span></p>
+            </div>
+        </div>        
+    </header>
+</body>
+</html>
