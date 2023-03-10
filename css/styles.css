@@ -59,21 +59,22 @@ img {
 }
 
 /* Degradados */
-.degradado-verde {
-    color: transparent;
+.degradado-verde {    
     /* Linear-gradient nos permite realizar degradados, lo
     primero que debemos de decirle es la direccion, luego 
-    el color, desde cuando va a arrancar (en este caso desde
-    el 0%, luego el color en el cual termina el degradado.)    
-    */
+    el color desde cuando va a arrancar (en este caso desde
+    el 0%), luego el color en el cual termina el degradado.
+    (En este caso termina en el 100%) */
     background: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
     /* Lo que hace es que ya que creamos el background, nos 
     permite a que parte o que elemento queremos agregar ese 
     background, sin embargo en chrome y muchos otros 
     navegadores debemos de agregarle el prefijo (-webkit-
-    background-clip) para que funcione.*/
+    background-clip) para que funcione, ademas de la 
+    trasparencia al color de la fuente.*/
     -webkit-background-clip: text;
     background-clip: text;
+    color: transparent;
 }
 
 /* Header */
@@ -129,4 +130,45 @@ img {
 .precio-producto span {
     font-size: 6rem; 
     font-weight: 900;
+}
+
+
+/* Iconos */
+.iconos {
+    padding: var(--separacion) 0;
+}
+
+@media (min-width: 768px) {
+    .iconos {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: calc(var(--separacion) / 2);        
+}
+
+.icono:last-of-type {
+    margin: 0;    
+}
+
+@media (min-width: 768px) {
+    .icono {
+        margin: 0;
+    }
+}
+
+.icono img {
+    width: 5rem;
+}
+
+.icono h3 {
+    color: var(--primario);
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-top: calc(var(--separacion) / 2);
 }
