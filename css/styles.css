@@ -350,7 +350,7 @@ a la siguiente fila con la propiedad grid-row de la 2 hacia la 3.*/
     background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(../img/newsletter.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 100%, 70rem;
+    background-size: 100%, 70rem;    
 }
 
 @media (min-width: 768px) {
@@ -409,9 +409,13 @@ a la siguiente fila con la propiedad grid-row de la 2 hacia la 3.*/
     font-weight: 900;
     border: none;
     margin-top: 1rem;
+    cursor:pointer;
 }
 
+/* Footer */
+
 .footer {
+    margin-top: 3rem;
     background-color: var(--negro);
     display: flex;
     justify-content: center;
