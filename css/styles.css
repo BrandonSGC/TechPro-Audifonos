@@ -410,3 +410,15 @@ a la siguiente fila con la propiedad grid-row de la 2 hacia la 3.*/
     border: none;
     margin-top: 1rem;
 }
+
+.footer {
+    background-color: var(--negro);
+    display: flex;
+    justify-content: center;
+}
+.footer p {
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.4rem;
+    color: var(--primario);
+    padding: 2rem 0;
+}
